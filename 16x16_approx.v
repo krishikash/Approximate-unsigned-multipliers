@@ -102,7 +102,7 @@ fa col27_stage1_2(sum_stage2_col27_2,carry_stage2_col27_2,pp[14][12],pp[15][11],
 wire sum_stage3_col17_1, sum_stage3_col18_1, sum_stage3_col19_1, sum_stage3_col20_1, sum_stage3_col22_1;
 wire carry_stage3_col17_1, carry_stage3_col18_1, carry_stage3_col19_1, carry_stage3_col20_1, carry_stage3_col22_1;
 
-/
+
 ac6g1 col17_stage2_1(sum_stage3_col17_1,carry_stage3_col17_1,sum_stage2_col17_1,carry_stage2_col16_1,1'b0,1'b0);
 ac6g1 col18_stage2_1(sum_stage3_col18_1,carry_stage3_col18_1,sum_stage2_col18_1,sum_stage2_col18_2,carry_stage2_col17_1,carry_stage2_col17_2);
 ac6g1 col19_stage2_1(sum_stage3_col19_1,carry_stage3_col19_1,sum_stage2_col19_1,carry_stage1_col18_2,carry_stage1_col18_3,pp[15][3]);
