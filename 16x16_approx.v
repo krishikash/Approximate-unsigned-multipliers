@@ -4,11 +4,7 @@ input [15:0] a, b;
 output reg [31:0] y;
 wire [15:0] pp [15:0]; 
 
-
-//wire carry_stage_col18_2, carry_stage_col23_1, carry_stage4_col22_1;
-//wire carry_stage6_col26_1;
-
-// Generate partial products
+  
 genvar i, j;
 generate
   for (i = 0; i < 16; i = i + 1) begin : PARTIAL_PRODUCTS
