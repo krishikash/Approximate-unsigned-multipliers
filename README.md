@@ -1,3 +1,2 @@
 # approximate-unsigned-multiplier
-8x8 approx multiplier 
-16x16 approx multiplier
+8x8,16x16,32x32 approx multiplier 
