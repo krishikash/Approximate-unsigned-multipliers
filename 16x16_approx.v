@@ -226,6 +226,7 @@ input x1, x2, x3, x4;
 output sum, carry;
   assign sum = 1;      // Always 1 (approximation)
   assign carry = x1;      // Carry = first input (approximation)
+  // assign carry  = 0;
 endmodule
 
 module ac6g1(sum, carry, x1, x2, x3, x4);
