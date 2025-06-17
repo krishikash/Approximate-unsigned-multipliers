@@ -30,7 +30,7 @@ def approx_mul(a, b):
     sum_stage1_col13_1,carry_stage1_col13_1 = fa(pp[5][7],pp[6][6],pp[7][5])
     
     #stage 1
-    sum_stage2_col9_1,carry_stage2_col9_1 = ac6g(sum_stage1_col9_1,sum_stage1_col9_2,carry_stage1_col8_1)
+    sum_stage2_col9_1,carry_stage2_col9_1 = ac6g(sum_stage1_col9_1,sum_stage1_col9_2,carry_stage1_col8_1,0)
     sum_stage2_col10_1,carry_stage2_col10_1 = ac6g(sum_stage1_col10_1,carry_stage1_col9_1,carry_stage1_col9_2,pp[6][3])
     sum_stage2_col12_1,carry_stage2_col12_1 = fa(sum_stage1_col12_1,carry_stage1_col11_1,pp[4][7])
     sum_stage2_col14_1,carry_stage2_col14_1 = fa(pp[6][7],pp[7][6],carry_stage1_col13_1)
@@ -44,7 +44,7 @@ def approx_mul(a, b):
     s1,c1 = ha(sum_stage1_col5_1,0)
     s2,c2 = fa(sum_stage1_col6_1,carry_stage1_col5_1,c1)
     s3,c3 = fa(sum_stage1_col7_1,carry_stage1_col6_1,c2)
-    s4,c4 = fa(sum_stage1_col8_1,carry_stage1_col7_1)
+    s4,c4 = fa(sum_stage1_col8_1,carry_stage1_col7_1,c3)
     s5,c5 = fa(sum_stage2_col9_1,c4,0)
     s6,c6 = fa(sum_stage3_col10_1,c5,0)
     s7,c7 = fa(sum_stage3_col11_1,carry_stage3_col10_1,c6)
